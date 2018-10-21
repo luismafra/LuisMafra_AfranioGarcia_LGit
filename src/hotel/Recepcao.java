@@ -23,16 +23,19 @@ public class Recepcao {
 	public void checkout(String nome) {
 		
 		Estadia estadia = encontraEstadia(nome);
+		if (estadia == null)
+			throw new NullPointerException("Esse animal não está hospedado.");
 		this.lucro += estadia.getValor() * estadia.getDias();
 		estadias.remove(estadia);
 		
 	}
 	
-	public Estadia encontraEstadia(String nome) {
+	private Estadia encontraEstadia(String nome) {
 		
 		for(Estadia estadia:estadias)
 			if (estadia.getNome().equals(nome))
 				return estadia;
+		return null;
 		
 	}
 	

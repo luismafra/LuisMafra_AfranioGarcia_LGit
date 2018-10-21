@@ -35,7 +35,7 @@ public class Estadia {
 	@Override
 	
 	public String toString() {
-		return this.getNome()+", "+this.getTipo()+", "+this.getDias()+" dias com o preÃ§o de R$ "+this.getValor();
+		return this.getNome()+", "+this.getTipo()+", "+this.getDias()+" dias com o preço de R$ "+this.getValor();
 	}
 	
 }
