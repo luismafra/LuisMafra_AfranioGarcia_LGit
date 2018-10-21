@@ -52,7 +52,7 @@ public class Recepcao {
 		
 		String aux = "";
 		for(Estadia estadia:estadias)
-			aux += estadia.getNome() + "(" + estadia.getTipo() + "): " + estadia.getDias() + " dias com o preço de R$ " + estadia.getValor() + "\n";
+			aux += estadia.getNome() + "(" + estadia.getTipo() + "): " + estadia.getDias() + " dias com o preï¿½o de R$ " + estadia.getValor() + "\n";
 		
 		return "Estadias:\n" + aux;
 		
