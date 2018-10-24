@@ -8,12 +8,12 @@ public class Hotel {
 		recepcao = new Recepcao();
 	}
 
-	public void checkin(String nome, String tipo, int idade, int dias, double valor) {
-		recepcao.checkin(nome, tipo, idade, dias, valor);
+	public void checkIn(String nome, String tipo, int idade, int dias, double valor) {
+		recepcao.checkIn(nome, tipo, idade, dias, valor);
 	}
 
-	public void checkout(String nome) {
-		recepcao.checkout(nome);
+	public void checkOut(String nome) {
+		recepcao.checkOut(nome);
 	}
 
 	public int getNumDeHospedes() {
